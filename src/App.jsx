@@ -287,7 +287,7 @@ const TimerApp = () => {
           </div>
         </div>
 
-        <div className="mb-6 flex justify-center">
+        <div className="mb-3 flex justify-center">
           <button 
             onClick={(e) => {
               createRipple(e, currentMode?.color);
@@ -296,8 +296,8 @@ const TimerApp = () => {
             disabled={timeLeft === 0} 
             className="relative transition-all duration-200 overflow-hidden" 
             style={{ 
-            width: 'clamp(280px, 50vw, 420px)',
-            height: 'clamp(280px, 50vw, 420px)',
+            width: 'clamp(240px, 45vw, 360px)',
+            height: 'clamp(240px, 45vw, 360px)',
             cursor: timeLeft === 0 ? 'default' : 'pointer',
             opacity: timeLeft === 0 ? 0.5 : 1
           }}>
@@ -339,7 +339,7 @@ const TimerApp = () => {
             </svg>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="flex flex-col items-center">
-                <div className="text-5xl sm:text-6xl font-bold" style={{ 
+                <div className="text-4xl sm:text-5xl font-bold" style={{ 
                   color: textColor,
                   fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif',
                   fontVariantNumeric: 'tabular-nums',
@@ -347,7 +347,7 @@ const TimerApp = () => {
                   fontWeight: '300'
                 }}>
                   {formatTime(timeLeft).main}
-                  <span className="text-2xl opacity-60">.{formatTime(timeLeft).ms}</span>
+                  <span className="text-xl opacity-60">.{formatTime(timeLeft).ms}</span>
                 </div>
                 {!isRunning && timeLeft !== 0 && hasStarted && (
                   <div className="mt-1 text-xs font-medium tracking-wider uppercase px-2 py-0.5 rounded-md" style={{ 
