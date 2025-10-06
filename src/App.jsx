@@ -287,7 +287,7 @@ const TimerApp = () => {
           </div>
         </div>
 
-        <div className="mb-3 flex justify-center">
+        <div className="mb-2 flex justify-center">
           <button 
             onClick={(e) => {
               createRipple(e, currentMode?.color);
@@ -329,12 +329,6 @@ const TimerApp = () => {
               <circle cx="100" cy="100" r="85" fill="none" stroke={`url(#emptyGradient-${activeMode})`} strokeWidth="14" opacity="0.9" />
               <circle cx="100" cy="100" r="85" fill="none" stroke={`url(#progressGradient-${activeMode})`} strokeWidth="16" strokeLinecap="round" strokeDasharray="534" strokeDashoffset={534 - progress} filter={`url(#gloss-${activeMode})`} style={{ 
                 transition: 'stroke-dashoffset 0.5s linear'
-              }} />
-              {/* Extra gloss highlight on the progress edge */}
-              <circle cx="100" cy="100" r="85" fill="none" stroke="rgba(255, 255, 255, 0.6)" strokeWidth="4" strokeLinecap="round" strokeDasharray="534" strokeDashoffset={534 - progress} style={{ 
-                transition: 'stroke-dashoffset 0.5s linear',
-                transform: 'rotate(-2deg)',
-                transformOrigin: 'center'
               }} />
             </svg>
             <div className="absolute inset-0 flex items-center justify-center">
