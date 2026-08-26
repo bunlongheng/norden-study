@@ -1,3 +1,13 @@
+<div align="center">
+  <img src="docs/icon.png" alt="Study Timer" width="96" height="96" />
+  <h1>Study Timer</h1>
+  <p><em>A calm, offline-ready study timer for kids with modes, a live countdown, and confetti rewards</em></p>
+  <p><a href="https://study-timer-bheng.vercel.app">Live</a> &middot; <a href="https://github.com/bunlongheng/study-timer">Repo</a> &middot; <a href="https://bunlongheng.com/projects?name=study-timer">Portfolio</a></p>
+  <img src="docs/social-preview.png" alt="Study Timer - preview" width="820" />
+</div>
+
+---
+
 # Study Timer
 
 A calm, responsive study timer for kids. Pick a study mode, run the circular
